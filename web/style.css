@@ -7,6 +7,7 @@
 }
 .header
 {
+    position:fixed;
     display: flex;
     float: left; 
     width: 100%;
@@ -18,12 +19,12 @@
 }
 .nav li:nth-child(1):hover a{
     color:red;
-    text-decoration: under-line; 
+    text-decoration: underline; 
 }
 .nav { 
     margin-top: 50px;
     display: inline-block;
-/* margin-left: 10%; 
+/*  margin-left: 10%; 
     display: flex;
     justify-content: center;
     align-items: center; */
@@ -63,20 +64,29 @@
     margin-left: 2.5%;
     margin-top: 48px;
     text-align: right;
-    
-    
+    text-decoration: none;
+    cursor: pointer;
+    height: 29px;
+    width: 100px;
 }
-.header .icon .icons {
+
+.header .icons {
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 15px;
     background:black;
-    border-radius: 50%;
-    border: 2px solid #000;
+    border-radius: 18px;
+    border: 8px solid #000;
+    line-height:15px ;
+}
+.icons a:hover {
+    background-color: red;
+    text-decoration: underline;
+    
 }
 .slider
 {
-
+        
 }
 .content{
 

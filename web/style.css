@@ -23,7 +23,7 @@ a{
 }
 .main_header
 {
-    width: 1450px;
+    width: 100%;
     text-transform: uppercase;
     align-items: center; 
     padding-top: 50px;
@@ -32,8 +32,9 @@ a{
 }
 .header{
     width: 90%;
-    justify-content: space-between;
     display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .header .nav div a{
     transition: all linear 0.1s;
@@ -43,6 +44,7 @@ a{
 }
 .nav { 
     width: 40%;
+
 }
 .nav div{
    list-style: none ;
@@ -51,33 +53,32 @@ a{
     text-decoration: none;
     font-size: 32px;
 }
+.main_subnav{
+width: 60%;
+}
 .subnav{
-    list-style: none;
     display: flex;
-    align-items: center;
-    width: 60%;
+    padding-right: 0%;
+    padding-left: 0%;
+    text-align: center;
 }
 .subnav li:hover a {
     color: red; 
 }
-
-.subnav ul {
+.subnav ul  {
     display: flex;
-    
 }
 .subnav li a{
     white-space: nowrap;
     transition: all linear 0.1s;
 
 }
-.subnav ul .menu {
+.subnav .main_menu .menu {
     margin-right: 18px;
 }
 .subnav .icon{
     display: flex;
-    text-align: center;
     cursor: pointer;
-   
 }
 .subnav .icon li{
     margin-right: 15px;
@@ -86,7 +87,6 @@ a{
 .subnav .icon a i{
     width: 36px;
     height: 36px;
-    text-align: center;
     background-color: #18242f;
     font-size: 18px;
     padding: 12px;
@@ -97,9 +97,33 @@ a{
     background-color: red;
     color: #fff;
 }
-.slider
+.slide 
 {
-        
+    width: 100%; 
+}
+.slide img {
+    position: relative;
+    width: 70%;
+    height: 50vh;
+    object-fit: cover;
+    float:right;
+    margin-left: auto;
+    padding-top: 30px;
+}
+.slide .header  {
+    position: relative;
+}
+.slide .hov{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px 18px;
+}
+.slide .hov:hover{
+    transform: scale(0.9);
+    cursor: pointer;
 }
 .content{
 

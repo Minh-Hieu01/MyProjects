@@ -116,7 +116,7 @@ width: 60%;
 .slide .hov{
     position:absolute;
     top:50%;
-    left:50%;
+    left:45%;
     border: 1px solid red;
     border-radius: 15px;
     padding: 10px 18px;
@@ -126,8 +126,36 @@ width: 60%;
     cursor: pointer;
 }
 .content{
-
+    padding-top: 10px;
+  
 }
-.footer{
-
+.headline ul   {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.headline .line li{
+   position: relative;
+}
+.headline .line li a img{
+    height: 220px; 
+    width: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.headline .line .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 800;
+    font-size: 23px;
+    text-transform:uppercase;
+    text-align: center;
+    
+}
+.headline .line .text p{
+    font-weight: 700;
+    font-size: 15px;
 }
